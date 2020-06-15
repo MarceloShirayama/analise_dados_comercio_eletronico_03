@@ -29,6 +29,7 @@ while date <= date_end:
     dates.append(date.strftime("%Y-%m-%d"))
     date += relativedelta(months=1)
 
+# Conexão com o banco de dados
 print("\n Abrindo conexão com o banco de dados ...")
 conn = connect_db('sqlite', path=DB_PATH)
 print("OK! Conexão com o banco de dados aberta.")
